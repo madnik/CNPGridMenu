@@ -95,6 +95,7 @@
     if (CNP_IS_IOS8) {
         UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:(UIBlurEffectStyle)self.blurEffectStyle];
         self.blurView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+        self.blurView.backgroundColor = [UIColor colorWithRed:255.0f green:255.0f blue:255.0f alpha:0.6];
         self.collectionView.backgroundView = self.blurView;
     }
     else {
