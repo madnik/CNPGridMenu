@@ -11,7 +11,7 @@
 #import <float.h>
 #import <Accelerate/Accelerate.h>
 
-#define CNP_IS_IOS8    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define CNP_IS_IOS8 FALSE // ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 
 @protocol CNPGridMenuButtonDelegate <NSObject>
 
