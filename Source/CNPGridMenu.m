@@ -175,6 +175,11 @@
 
 @implementation CNPGridMenuCell
 
+- (void)prepareForReuse{
+    [super prepareForReuse];
+    [self.menuItem removeObserver:self forKeyPath:@"disabled"];
+}
+
 - (void)setupCell {
     if (CNP_IS_IOS8) {
         UIVisualEffect *vibrancyEffect = [UIVibrancyEffect effectForBlurEffect:[UIBlurEffect effectWithStyle:(UIBlurEffectStyle)self.blurEffectStyle]];
